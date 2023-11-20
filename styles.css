@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "MarvelRegular";
+  src: url("/fonts/MarvelRegular-Dj83.woff2") format("woff2"),
+    url("/fonts/MarvelRegular-Dj83.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "MarvelRegular", sans-serif;
+  text-align: center; /* Centers the text */
+  font-size: 72px; /* Adjusts the font size, you can set this to your preference */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8); /* Corrected the color syntax */
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#modal img {
+  /* Assuming your image is directly inside the modal */
+  max-width: 80%; /* Limits the image width to 80% of the modal's width */
+  max-height: 80%; /* Limits the image height to 80% of the modal's height */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+.no-display {
+  display: none;
+}
+
+img {
+  max-width: 100%; /* Ensures the image is no wider than its container */
+  height: auto; /* Maintains the aspect ratio */
+}
